@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voici ma solution du dernier projet non validant de la première semaine sur rails.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+L'objectif du projet était de créer une application de gossip pour s'exercer avec le CRUD. Il fallait créer des méthodes de création, suppression, edition et un affichage de l'ensemble des gossips.
