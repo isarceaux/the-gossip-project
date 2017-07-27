@@ -7,10 +7,14 @@ class GossipsController < ApplicationController
   def create
     @gossip = Gossip.new(gossip_params)
        if @gossip.save
-        redirect_to new_gossip_path
+        redirect_to @gossip
       else
         render :new
       end
+  end
+
+  def show
+    @gossip = Gossip.find(params[:id])
   end
 
   private
