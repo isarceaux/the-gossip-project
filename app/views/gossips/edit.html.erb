@@ -1,0 +1,22 @@
+<h1>Bienvenue sur la page où tu peux éditer ton gossip</h1>
+
+<%= form_for(@gossip) do |f| %>
+  
+  <p>
+  <%= f.label :anonymous_author, value:"Votre pseudo d'auteur anonyme" %>
+  <br />
+  <%= f.text_field :anonymous_author, placeholder: @gossip.anonymous_author %>
+  </p>
+
+  <p>
+  <%= f.label :content, value:"Votre gossip ici" %>
+  <br />
+  <%= f.text_field :content, placeholder: @gossip.content, size: 150%>
+  </p>
+
+  <p>
+    <%= f.submit "Modifie ton gossip !!!" %>
+  </p>
+
+
+<% end %>

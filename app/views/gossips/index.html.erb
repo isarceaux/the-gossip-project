@@ -1,0 +1,22 @@
+<h1>Bienvenue sur the Hacking Gossip !</h1>
+
+<p>Voici la liste des différents gossips...</p>
+
+
+<table>
+<tr>
+  <th>Auteur</th>
+  <th>Gossip</th>
+  <th></th>
+</tr>
+<% @gossips.each do |gossip| %>
+<tr>
+  <td><%= gossip.anonymous_author %></td>
+  <td><%= gossip.content %></td>
+  <td><%= link_to "Voir", "gossips/#{gossip.id}" %></td>
+
+</tr>
+<% end %>
+</table>
+
+<p>Tu veux toi aussi créer ton gossip ? <button><%= link_to "Gossiiiiip !!", 'gossips/new' %></button> </p>

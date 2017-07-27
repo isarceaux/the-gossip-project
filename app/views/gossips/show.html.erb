@@ -5,3 +5,7 @@
 <p></p>
 
 <p><%= @gossip.anonymous_author%></p>
+
+<%= link_to 'Clique pour détruire', @gossip, method: :delete %>
+<p><%= link_to "Modifier le gossip", edit_gossip_path %></p>
+<p><%= link_to "Retour à la liste des gossips", root_path %></p>
