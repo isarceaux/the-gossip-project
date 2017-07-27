@@ -1,0 +1,22 @@
+<h1>Formulaire de création d'un gossip</h1>
+
+<%= form_for(@gossip) do |f| %>
+  
+  <p>
+  <%= f.label :anonymous_author, value:"Votre pseudo d'auteur anonyme" %>
+  <br />
+  <%= f.text_field :anonymous_author %>
+  </p>
+
+  <p>
+  <%= f.label :content, value:"Votre gossip ici" %>
+  <br />
+  <%= f.text_field :content, placeholder:'Par exemple raconte qui tu as vu sortir du hangar à 8h du matin car il avait passé la nuit là...', size: 150%>
+  </p>
+
+  <p>
+    <%= f.submit "Balance le gossip !!!" %>
+  </p>
+
+
+<% end %>
